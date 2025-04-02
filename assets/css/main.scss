@@ -26,7 +26,18 @@ body {
 
 /*general styles*/
 
+header{
+    background-color: #18181B;
+    @include flexRow;
 
+
+.logo{
+
+}
+.more{
+
+}
+}
 
 /*general styles*/
 

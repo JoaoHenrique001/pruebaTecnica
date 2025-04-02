@@ -6,6 +6,6 @@ export const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: '/', component: HomeView },
-    { path: '/about', component: StreamView },
+    { path: '/StreamView', component: StreamView },
   ],
 });
