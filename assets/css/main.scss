@@ -11,14 +11,14 @@ body {
 /*exclusive font from project*/
 @font-face {
     font-family: 'Inter';
-    src: url('~assets/fonts/Inter/static/Inter_24pt-Light.ttf') format('truetype');
+    src: url('~assets/fonts/Inter/Inter_24pt-Light.ttf') format('truetype');
     font-weight: 300; /*font Light */
     font-style: normal;
   }
   
   @font-face {
     font-family: 'Inter';
-    src: url('~assets/fonts/Inter/static/Inter_24pt-Medium.ttf') format('truetype');
+    src: url('~assets/fonts/Inter/Inter_24pt-Medium.ttf') format('truetype');
     font-weight: 500; /*font Medium */
     font-style: normal;
   }
@@ -27,9 +27,10 @@ body {
 /*general styles*/
 
 header{
-    background-color: #18181B;
     @include flexRow;
-
+    background-color: $primaryColor;
+    padding: 5px 20px 5px 20px;
+    height: 50px;
 
 .logo{
 
@@ -37,6 +38,9 @@ header{
 .more{
 
 }
+}
+.header-left{
+  
 }
 
 /*general styles*/
