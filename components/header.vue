@@ -7,16 +7,18 @@
             <img src="../assets/icon/more.svg" class="more" alt="more">
         </div>
 
-        <div class="middle-header">
+        <form class="middle-header">
             <input type="text" placeholder="Search">
             <button><img src="../assets/icon/search.svg" alt="search"></button>
-        </div>
+        </form>
 
         <div class="rigth-header">
-            <div><img src="../assets/icon/notification.svg" alt=""> <span class="notification">63</span></div>
-            <button>Log In</button>
-            <button>Sign Up</button>
-            <img src="../assets/icon/profile.svg" alt="">
+            <div class="notification"><img src="../assets/icon/notification.svg" alt=""> <span>63</span></div>
+            <div class="auth">
+            <button class="log-in">Log In</button>
+            <button class="sign-up">Sign Up</button>
+            </div>
+            <img src="../assets/icon/profile.svg" alt="" class="person">
         </div>
 
     </header>

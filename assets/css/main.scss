@@ -1,21 +1,20 @@
 @import 'variables';
-@import 'mixins';      
+@import 'mixins';
 @import 'reset';
-@import 'base';        
+@import 'base';
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f0f0f0;
+  background-color: #0E0E10;
 }
 
-/*exclusive font from project*/
 @font-face {
     font-family: 'Inter';
     src: url('~assets/fonts/Inter/Inter_24pt-Light.ttf') format('truetype');
     font-weight: 300; /*font Light */
     font-style: normal;
   }
-  
+
   @font-face {
     font-family: 'Inter';
     src: url('~assets/fonts/Inter/Inter_24pt-Medium.ttf') format('truetype');
@@ -33,8 +32,10 @@ header{
     height: 3.125rem;
     justify-content: space-between;
     color: white;
-}
+    box-shadow: 0px 2px 10px #000000E5;
 
+}
+/* nesting */
 .header-left{
   @include center;
   width: 9.1875rem;
@@ -44,15 +45,21 @@ header{
   height: 1.875rem;;
   font-size: .8125rem;
   span{
-    padding-top: .3125rem;
-    padding-left: .3125rem;
+    padding-top: .4375rem;
+    padding-left: .375rem;
   }
 }
 .more{
  padding: .625rem;
-}}
-.middle-header{
+ margin-left: 3.75rem;
+ margin-bottom: 5px;
+ width: 60px;
+ height: 60px;
 
+}}
+
+/* nesting */
+.middle-header{
   input{
     background-color: $colorInvisble;
     border-top-left-radius: $borderInput;
@@ -64,7 +71,6 @@ header{
     height: 2.5rem;
     box-shadow: inset 0 0 0 1px #DEDEE366;
     font-size: .875rem;
-
     &::placeholder {
       color: #FFFFFFB2;
       opacity: 1;}
@@ -79,9 +85,70 @@ header{
   img{
     width: 1.5rem;
     height: 1.5rem;
-    justify-self: center;
-    align-self: center;
+    margin-left: 5px
   }
+  }
+}
+/* nesting */
+.rigth-header{
+  @include flexRow;
+  justify-content: flex-end;
+  width: 18rem;
+  // background-color: antiquewhite;
+  .notification{
+    position: relative;
+    margin-right: 18px;
+    margin-top: 15px;
+    img{
+      width: 1.375rem;
+      height: 1.375rem;
+    }
+    span{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #EB0400;
+      border-radius: 562.5rem;
+      border: solid .125rem $primaryColor;
+      width: 1.9719rem ;
+      height: 1.3875rem;
+      position: absolute;
+      text-align: center;
+      font-size: .75rem;
+      top: -13px;
+      right: -17px;
+    }
+  }
+  .auth{
+    display: flex;
+    flex-direction: row;
+
+  .log-in{
+    background-color: $colorButton ;
+    width: 59px;
+    height: 30px;
+    border-radius: $borderRegister;
+    margin-right: 5px;
+    @include centralised;
+    @include RigthLeft;
+    margin-top: 5px;
+  }
+  .sign-up{
+    background-color: $secondaryColor;
+    width: 69px;
+    height: 30px;
+    border-radius: $borderRegister;
+    margin-left: 5px;
+    @include centralised;
+    @include RigthLeft;
+    margin-top: 5px;
+  }
+}
+  .person{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
   }
 }
 
