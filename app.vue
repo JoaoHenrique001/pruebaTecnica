@@ -1,13 +1,11 @@
 <template>
   <div class="app">
     <Header />
-    <NuxtPage />
+    <Sidebar />
   </div>
 </template>
 
 <script setup>
-// Importa tu componente Header
 import Header from '@/components/header.vue';
+import Sidebar from '@/components/sidebar.vue';
 </script>
-
-<style></style>
