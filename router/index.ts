@@ -9,3 +9,5 @@ export const router = createRouter({
     { path: '/StreamView', component: StreamView },
   ],
 });
+
+export default router;

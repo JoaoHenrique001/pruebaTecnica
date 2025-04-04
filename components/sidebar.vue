@@ -9,7 +9,7 @@
         </div>
 
         <nav class="sidebar-content">
-
+            
         </nav>
     </aside>
 </template>
