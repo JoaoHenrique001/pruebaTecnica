@@ -8,13 +8,13 @@
   const listofLiveChannels = ref([]);
   
   function fetchCategories() {
-    const fetchLink = 'https://api.twitch.tv/helix/games?first=6';
+    const fetchLink = 'https://api.twitch.tv/helix/games/top?first=6';
   
     fetch(fetchLink, {
       method: 'GET',
       headers: new Headers({
-        'Authorization': 'Bearer cfabdegwdoklmawdzdo98xt2fo512y',
-        'Client-ID': '4hpjwum2a0lq6hfy050iqq857sy15h',
+        'Authorization': 'Bearer 6ry2587nh0etrg4wjaktpi6nsmuk0t',
+        'Client-ID': '23qb7idhia0oe5fdiinx7oopwszvoi',
       }),
     })
       .then((response) => response.json())
