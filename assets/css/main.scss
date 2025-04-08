@@ -4,24 +4,8 @@
 @import 'base';
 
 body {
-  font-family: 'Inter';
   background-color: #0E0E10;
 }
-
-@font-face {
-    font-family: 'Inter';
-    src: url('../../public/fonts/Inter/Inter_24pt-Light.ttf') format('truetype');
-    font-weight: 300; /*font Light */
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Inter';
-    src: url('../../public/fonts/Inter/Inter_24pt-Medium.ttf') format('truetype');
-    font-weight: 500; /*font Medium */
-    font-style: normal;
-  }
-
 
 /*header styles*/
 
@@ -170,7 +154,6 @@ header{
   padding-top: 1.875rem;
   margin-right: .3125rem;
   font-family: 'Inter';
-  border-right: 1px solid white;
 }
 
 .sidebar-header {
@@ -237,4 +220,65 @@ img{
 }
 
 /*side-bar styles*/
+main{
+  display: flex;
+  flex-direction: row;
+}
+/*main categories styles*/
+.categories {
+  display: flex;
+  flex-direction: column;
+  &__words {
+    p {
+      span {
+        color: $secondaryColor;
+      }
+    }
+  }
+  &__boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .box{
+      display: flex;
+      flex-direction: column;
+      img{
 
+      }
+      span{
+
+      }
+      &__titleOne{
+      }
+      &__titleTwo{
+
+      }
+    }
+  }
+  &__buttons{
+    display: flex;
+    flex-direction: row; 
+    button{
+      margin-right: 2%;
+      width: 220px;
+      height: 45px;
+      background-color: $secondaryColor;
+      border-radius: 6px;
+      display: flex;
+      flex-direction:row;
+      justify-content: space-between;
+      color: white;
+      font-size: 20px;
+      padding-right: 10px;
+      padding-left: 10px;
+      align-items: center;
+      img{
+        width: 60px;
+        height: 60px;
+        background-color:#0e0e1000;
+      }
+    }
+  }
+}
+/*main categories styles*/

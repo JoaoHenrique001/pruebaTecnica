@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../../public/fonts/Inter/Inter_24pt-Light.ttf') format('truetype');
+  font-weight: 300; /*font Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../public/fonts/Inter/Inter_24pt-Medium.ttf') format('truetype');
+  font-weight: 500; /*font Medium */
+  font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +19,7 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter';
   }
   
   a {
