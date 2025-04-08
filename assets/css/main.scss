@@ -223,13 +223,17 @@ img{
 main{
   display: flex;
   flex-direction: row;
+  
 }
 /*main categories styles*/
 .categories {
   display: flex;
   flex-direction: column;
+  padding-top: 2.5rem;
   &__words {
+    margin-bottom: 10px;
     p {
+      color: white;
       span {
         color: $secondaryColor;
       }
@@ -239,27 +243,51 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    gap: 1.25rem;
     .box{
       display: flex;
       flex-direction: column;
+      width: 181.67px;
+      gap: 5px;
       img{
-
+        width: 181.67px;
+        height: 242.22px;
       }
       span{
 
       }
       &__titleOne{
+        color: white;
+        font-family: 14px;
       }
       &__titleTwo{
+        font-weight: 300;
+        color: #ADADB8;
+        font-size: 13px;
+      }
+      &__tags{
+        width: 20%;
+        background-color: #53535F61;
+        color: #ADADB8;
+        border-radius: 9000px;
+        padding: 2px ; 
+        font-size: 12px;
+        display: inline-block;
+        text-align: center;
+        span{
 
+        }
       }
     }
   }
   &__buttons{
     display: flex;
     flex-direction: row; 
+    justify-content: center;
+    flex-wrap: wrap;
+
     button{
+      margin-top: 10px;
       margin-right: 2%;
       width: 220px;
       height: 45px;
